@@ -1,0 +1,37 @@
+{
+  "_comment": "Foldscan monetisation rules. The app fetches this at most twice a day, sends nothing, and falls back to the values compiled into the binary if this file is missing, unreachable or malformed. A purchase always outranks anything here. See src/premium/remoteConfig.ts.",
+  "trialEnds": "2026-11-15T23:59:59",
+  "premiumTools": [
+    "merge_pdf",
+    "split_pdf",
+    "extract_pages",
+    "pdf_to_word",
+    "pdf_to_excel",
+    "pdf_to_markdown",
+    "word_to_pdf",
+    "excel_to_pdf",
+    "powerpoint_to_pdf",
+    "markdown_to_pdf",
+    "html_to_pdf",
+    "html_to_image",
+    "add_watermark",
+    "watermark_image",
+    "add_page_numbers",
+    "stamp_pdf",
+    "protect_pdf",
+    "unlock_pdf",
+    "sign_pdf",
+    "redact_pdf",
+    "passport_photo",
+    "remove_background",
+    "upscale_image",
+    "meme_generator"
+  ],
+  "freeThemes": [
+    "ocean",
+    "midnight",
+    "paper"
+  ],
+  "adsEnabled": false,
+  "passMinutes": 60
+}
