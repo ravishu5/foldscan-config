@@ -33,5 +33,6 @@
     "paper"
   ],
   "adsEnabled": false,
-  "passMinutes": 60
+  "passMinutes": 60,
+  "minVersionCode": 0
 }

@@ -34,6 +34,23 @@ trial date were exactly the ones who could never receive one.
 | `freeThemes` | Theme presets available without Pro. Must include at least one light and one dark. |
 | `adsEnabled` | Whether the app may offer a rewarded ad in place of a purchase. |
 | `passMinutes` | How long one rewarded ad unlocks a tool for. 5–1440. |
+| `minVersionCode` | Oldest Android `versionCode` allowed to run. `0` means no minimum. |
+
+### `adsEnabled` does not install an ad network
+
+Setting it to `true` only permits the app to *offer* a rewarded ad where one is already
+available. No advertising SDK ships in the app, so with nothing able to serve an ad the offer
+never appears. This field is the kill switch for after an SDK exists — a way to withdraw ads
+everywhere without waiting for a store release — not the switch that turns them on.
+
+### `minVersionCode` blocks people out of their own documents
+
+Scans live in the app's private storage, so a blocked build is not an inconvenience: it is
+somebody's records behind a door they cannot open. Leave it at `0` unless an old build would
+actively corrupt data by continuing. Use the store's own update prompt for everything else.
+
+The app fails **open** here — an absent, zero, negative or non-numeric value, or a build whose
+own version cannot be read, all mean "do not block".
 
 Editing this file changes the app's behaviour within about half a day. Validation lives in
 `src/premium/remoteConfig.ts` in the app repository — a change that fails it is ignored rather
