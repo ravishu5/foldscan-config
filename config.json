@@ -24,8 +24,7 @@
     "redact_pdf",
     "remove_background",
     "upscale_image",
-    "meme_generator",
-    "passport_photo"
+    "meme_generator"
   ],
   "freeThemes": [
     "ocean",
