@@ -22,7 +22,7 @@
     "unlock_pdf",
     "sign_pdf",
     "redact_pdf",
-    "passport_photo",
+    
     "remove_background",
     "upscale_image",
     "meme_generator"
