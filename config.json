@@ -1,6 +1,6 @@
 {
   "_comment": "TESTING: trialEnds is deliberately in the past so the post-trial state can be checked. Restore to 2026-12-31T23:59:59 before launch. The app fetches this at most twice a day, sends nothing, and falls back to the values compiled into the binary if this file is missing, unreachable or malformed. A purchase always outranks anything here. See src/premium/remoteConfig.ts.",
-  "trialEnds": "2026-08-29T23:59:59",
+  "trialEnds": "2026-12-31T23:59:59",
   "premiumTools": [
     "merge_pdf",
     "split_pdf",
